@@ -1,0 +1,9 @@
+C:\Documents and Settings\CARLOS\Escritorio\CarlosX-SkyFire-Community-Tools-2393d8b\Sources\Patcher\SkyFirePatcher\bin\Debug\VoragineParcher.exe
+C:\Documents and Settings\CARLOS\Escritorio\CarlosX-SkyFire-Community-Tools-2393d8b\Sources\Patcher\SkyFirePatcher\bin\Debug\VoragineParcher.pdb
+C:\Documents and Settings\CARLOS\Escritorio\CarlosX-SkyFire-Community-Tools-2393d8b\Sources\Patcher\SkyFirePatcher\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\CARLOS\Escritorio\CarlosX-SkyFire-Community-Tools-2393d8b\Sources\Patcher\SkyFirePatcher\obj\Debug\VoragineParcher.Form1.resources
+C:\Documents and Settings\CARLOS\Escritorio\CarlosX-SkyFire-Community-Tools-2393d8b\Sources\Patcher\SkyFirePatcher\obj\Debug\VoragineParcher.Properties.Resources.resources
+C:\Documents and Settings\CARLOS\Escritorio\CarlosX-SkyFire-Community-Tools-2393d8b\Sources\Patcher\SkyFirePatcher\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\CARLOS\Escritorio\CarlosX-SkyFire-Community-Tools-2393d8b\Sources\Patcher\SkyFirePatcher\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\CARLOS\Escritorio\CarlosX-SkyFire-Community-Tools-2393d8b\Sources\Patcher\SkyFirePatcher\obj\Debug\VoragineParcher.exe
+C:\Documents and Settings\CARLOS\Escritorio\CarlosX-SkyFire-Community-Tools-2393d8b\Sources\Patcher\SkyFirePatcher\obj\Debug\VoragineParcher.pdb

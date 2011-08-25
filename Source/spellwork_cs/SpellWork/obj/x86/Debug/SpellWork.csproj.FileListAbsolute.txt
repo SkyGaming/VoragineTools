@@ -1,0 +1,17 @@
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\bin\Debug\SpellWork.exe.config
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\bin\Debug\app.config
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\bin\Debug\SpellWork.exe
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\bin\Debug\SpellWork.pdb
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\bin\Debug\MySql.Data.dll
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\SpellWork.FormAboutBox.resources
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\SpellWork.FormCalculateFlags.resources
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\SpellWork.FormSearch.resources
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\SpellWork.FormMain.resources
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\SpellWork.Properties.Resources.resources
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\SpellWork.FormSettings.resources
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\SpellWork.exe
+C:\Documents and Settings\CARLOS\Escritorio\VoragineTools\spellwork_cs\SpellWork\obj\x86\Debug\SpellWork.pdb

@@ -1,0 +1,16 @@
+This is a WoW Packet Viewer with a set of packet parsers.
+Target version is 4.2.0.
+Supported input formats include PKT and Izidor.
+Opcodes are loaded from a MySQL DB table.
+The base structure and content for OpcodesDB: https://github.com/ProjectSkyfire/SkyFireEMU_420/blob/master/sql/opcodes/emuopcodes.sql
+And current updates: https://github.com/ProjectSkyfire/SkyFireEMU_420/blob/master/sql/OpcodesUpdates4.2.0.sql
+
+UpdatePacketParser project is not updated for 4.2 yet.
+
+The project was originally written by TOM_RUS and is forked from https://github.com/tomrus88/WoWTools
+It incldes updates by Chameleon and Singlem as well as code/parsers from:
+ * SilinoronParser (https://github.com/silinoron/SilinoronParser)
+ * Kaelima's parser (https://github.com/kaelima/WowPacketParser)
+ * Zor's parser (https://bitbucket.org/XTZGZoReX/wowpacketparser)
+ * LordJZ 
+ * and others.

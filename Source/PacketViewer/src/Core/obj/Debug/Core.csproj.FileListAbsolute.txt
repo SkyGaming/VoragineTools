@@ -1,0 +1,5 @@
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\bin\Debug\WowTools.Core.dll
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\bin\Debug\WowTools.Core.pdb
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\Core\obj\Debug\WowTools.Core.dll
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\Core\obj\Debug\WowTools.Core.pdb

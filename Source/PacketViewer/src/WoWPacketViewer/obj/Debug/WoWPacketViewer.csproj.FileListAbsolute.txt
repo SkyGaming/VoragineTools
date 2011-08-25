@@ -1,0 +1,15 @@
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\bin\Debug\WoWPacketViewer.exe.config
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\bin\Debug\WoWPacketViewer.exe
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\bin\Debug\WoWPacketViewer.pdb
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\WoWPacketViewer.FrmChangeOpcode.resources
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\WoWPacketViewer.FrmMain.resources
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\WoWPacketViewer.FrmSettings.resources
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\WoWPacketViewer.FrmWardenDebug.resources
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\WoWPacketViewer.PacketViewTab.resources
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\WoWPacketViewer.Properties.Resources.resources
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\WoWPacketViewer.FrmSearch.resources
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\WoWPacketViewer.exe
+C:\Documents and Settings\CARLOS\Escritorio\ProjectSkyfire-PacketViewer-a55f173\src\WoWPacketViewer\obj\Debug\WoWPacketViewer.pdb
