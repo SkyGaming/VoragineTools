@@ -1,0 +1,86 @@
+#!/usr/bin/php
+<?php
+/* CONFIGURATION
+	$url: where to send the paste
+	$author: the author of the report
+	$description: revision, custom patches (if any)
+*/
+$url = "http://trinity.elegosproject.org/crash/index.php";
+$author = "elegos";
+$description = "Rev. 150";
+?>
+
+<?php
+function post_it($datastream, $url)
+{
+	$url = preg_replace("@^http://@i", "", $url);
+	$host = substr($url, 0, strpos($url, "/"));
+	$uri = strstr($url, "/");
+	
+	$reqbody = "";
+	foreach($datastream as $key=>$val)
+	{
+		if (!empty($reqbody))
+			$reqbody.= "&";
+		$reqbody.= $key."=".urlencode($val);
+	}
+	
+	$contentlength = strlen($reqbody);
+	$reqheader =  "POST $uri HTTP/1.1\r\n".
+	"Host: $host\n". "User-Agent: elegopaster/0.0.1\r\n".
+	"Content-Type: application/x-www-form-urlencoded\r\n".
+	"Content-Length: $contentlength\r\n\r\n".
+	"$reqbody\r\n";
+	
+	$socket = fsockopen($host, 80, $errno, $errstr);
+
+	if (!$socket)
+	{
+		$result["errno"] = $errno;
+		$result["errstr"] = $errstr;
+		return $result;
+	}
+
+	fputs($socket, $reqheader);
+
+	while (!feof($socket))
+		$result[] = fgets($socket, 4096);
+
+	fclose($socket);
+	return $result;
+}
+?>
+
+<?php
+$prg = $argv[0];
+$usage =  "EleGoPaster by EleGoS v.1.0\n";
+$usage .= "Usage: php $prg text to be sent\n";
+
+
+$code = "";
+$stdin = fopen('php://stdin', 'r');
+
+while(!feof($stdin))
+	$code .= fgets($stdin, 4096);
+if($code == "") die($usage);
+
+$data["name"] = $author;
+$data["code_lang"] = "C++";
+$data["tab_length"] = 9;
+$data["description"] = $description;
+$data["code"] = $code;
+$data["submit"] = "submit";
+
+$return = post_it($data,$url);
+
+foreach($return as $line)
+{
+	if(strpos($line,"<a href=") && strpos($line,"index.php?id="))
+	{
+		$substring = strstr($line,"http:");
+		$last_char = strpos($substring,"</a>");
+		echo "(".date("F j, Y - g:i a") . ") " . substr($substring,0,$last_char)."\n";
+	}
+}
+
+?>

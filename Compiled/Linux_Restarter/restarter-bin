@@ -1,0 +1,58 @@
+#!/bin/bash
+
+######################
+GDB_ENABLED=0
+GDB="trinity.gdb"
+COREPID="mundo.pid"
+REALMPID="login.pid"
+
+CORE_CONFIG="../etc/worldserver.conf"
+REALM_CONFIG="../etc/authserver.conf"
+
+CORE_SCREEN_NAME="worldserver"
+REALM_SCREEN_NAME="authserver"
+
+TRACE_BEGIN_STRING="SIGSEGV"
+TRACE_FILE="trace.log"
+ERR_FILE="error.log"
+SYSLOG="system.log"
+SYSERR="system.err"
+LINKS_FILE="crash_links.link"
+######################
+
+function checkStatus() {
+	if [ -d "/proc/"$1 ]; then
+		eval "TEST=1"
+	else
+		eval "TEST=0"
+	fi
+}
+
+while :
+do
+	PID=$(cat $COREPID)
+	checkStatus $PID
+	if [ $TEST -eq 0 ]; then
+		DATE=$(date)
+		echo "Restarting Trinity Core ($DATE)"
+		if [ $GDB_ENABLED -eq 1 ]; then
+			grep -B 10 -A 1800 "$TRACE_BEGIN_STRING" "$SYSLOG" > "$TRACE_FILE"
+			cat "$TRACE_FILE" | ./paster | grep "http" >> "$LINKS_FILE"
+			cat "$SYSERR" > "$ERR_FILE"
+			screen -A -m -d -S $CORE_SCREEN_NAME ./start core $GDB "$CORE_CONFIG" "$SYSLOG" "$SYSERR" 1
+		fi
+		
+		if [ $GDB_ENABLED -eq 0 ]; then
+			screen -A -m -d -S $CORE_SCREEN_NAME ./start core null "$CORE_CONFIG" null null 0
+		fi
+	fi
+	
+	PID=$(cat "$REALMPID")
+	checkStatus $PID
+	if [ $TEST -eq 0 ]; then
+		DATE=$(date)
+		echo "Restarting Trinity Realm ($DATE)"
+		screen -A -m -d -S $REALM_SCREEN_NAME ./start realm null "$REALM_CONFIG"
+	fi
+	sleep 45
+done

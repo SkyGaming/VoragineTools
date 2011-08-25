@@ -1,0 +1,109 @@
+With this spell system everybody can fix spell(which has stat) very easily.
+There are three option in the system.
+1- %X increase
+2- +%X increase
+3- Value increase
+
+Some examples:
+http://www.wowhead.com/spell=1459 -> Arcane Brilliance - "... spell power by 6% ..." (First option)
+http://www.wowhead.com/spell=30482 -> Molten Armor - "... increases your spell critical strike chance by 3% ..." (Second option)
+http://www.wowhead.com/spell=21562 -> Power Word: Fortitude - "... increasing their Stamina by 584 ..." (Third option)
+
+How it works?
+
+(spell_stats)
+First, you have to write a spellid. Example: http://www.wowhead.com/spell=79057
+Secondly, you have to write a stat type. Example: 45 -> It means spell bonus.
+Finally, you have to write a value (to value1) and a percent value (to percent1). IMPORTANT NOTE: DO NOT WRITE BOTH OF THEM.
+
+1) If VALUE is 100, then player who have 79057 will gain +100 spell bonus.
+
+2) If PERCENT is 10, then player who have 79057 will gain %10 of base spell bonus.
+
+3) If Percent is -10, then player who have 79057 will gain +%10. IMPORTANT NOTE: BUT THIS(3) WORKS ONLY FOR RATINGS. FOR EXAMPLE: CRIT CHANCE (NOT SPELL BONUS OR STATS ETC.)
+
+NOTE: 1) You can write maximum 5 type of stat for per spell.
+2) Do not make change(s) while your server is running because if a player has any spell which in spell_stats then after changes of that spell the player's stats can be wrong so I suggest to make that while server is offline.
+
+
+Type of Stats
+-----------------------
+0 - SPELL_MOD_MANA
+1 - SPELL_MOD_HEALTH
+3 - SPELL_MOD_AGILITY
+4 - SPELL_MOD_STRENGTH
+5 - SPELL_MOD_INTELLECT
+6 - SPELL_MOD_SPIRIT
+7 - SPELL_MOD_STAMINA
+12 - SPELL_MOD_DEFENSE_SKILL_RATING
+13 - SPELL_MOD_DODGE_RATING
+14 - SPELL_MOD_PARRY_RATING
+15 - SPELL_MOD_BLOCK_RATING
+16 - SPELL_MOD_HIT_MELEE_RATING
+17 - SPELL_MOD_HIT_RANGED_RATING
+18 - SPELL_MOD_HIT_SPELL_RATING
+19 - SPELL_MOD_CRIT_MELEE_RATING
+20 - SPELL_MOD_CRIT_RANGED_RATING
+21 - SPELL_MOD_CRIT_SPELL_RATING
+22 - SPELL_MOD_HIT_TAKEN_MELEE_RATING
+23 - SPELL_MOD_HIT_TAKEN_RANGED_RATING
+24 - SPELL_MOD_HIT_TAKEN_SPELL_RATING
+25 - SPELL_MOD_CRIT_TAKEN_MELEE_RATING
+26 - SPELL_MOD_CRIT_TAKEN_RANGED_RATING
+27 - SPELL_MOD_CRIT_TAKEN_SPELL_RATING
+28 - SPELL_MOD_HASTE_MELEE_RATING
+29 - SPELL_MOD_HASTE_RANGED_RATING
+30 - SPELL_MOD_HASTE_SPELL_RATING
+31 - SPELL_MOD_HIT_RATING -> If you want to use this, then you must read my last note.
+32 - SPELL_MOD_CRIT_RATING -> If you want to use this, then you must read my last note.
+33 - SPELL_MOD_HIT_TAKEN_RATING -> If you want to use this, then you must read my last note.
+34 - SPELL_MOD_CRIT_TAKEN_RATING -> If you want to use this, then you must read my last note.
+35 - SPELL_MOD_RESILIENCE_RATING
+36 - SPELL_MOD_HASTE_RATING -> If you want to use this, then you must read my last note.
+37 - SPELL_MOD_EXPERTISE_RATING
+38 - SPELL_MOD_ATTACK_POWER -> If you want to use this, then you must read my last note.
+39 - SPELL_MOD_RANGED_ATTACK_POWER
+40 - SPELL_MOD_FERAL_ATTACK_POWER -> This isn't work so do not use it.
+41 - SPELL_MOD_SPELL_HEALING_DONE
+42 - SPELL_MOD_SPELL_DAMAGE_DONE
+43 - SPELL_MOD_MANA_REGENERATION
+44 - SPELL_MOD_ARMOR_PENETRATION_RATING
+45 - SPELL_MOD_SPELL_POWER
+46 - SPELL_MOD_HEALTH_REGEN
+47 - SPELL_MOD_SPELL_PENETRATION
+48 - SPELL_MOD_BLOCK_VALUE
+49 - SPELL_MOD_MASTERY_RATING
+50 - SPELL_MOD_EXTRA_ARMOR
+51 - SPELL_MOD_FIRE_RESISTANCE
+52 - SPELL_MOD_FROST_RESISTANCE
+53 - SPELL_MOD_HOLY_RESISTANCE
+54 - SPELL_MOD_SHADOW_RESISTANCE
+55 - SPELL_MOD_NATURE_RESISTANCE
+56 - SPELL_MOD_ARCANE_RESISTANCE
+57 - SPELL_MOD_ATTACK_POWER_POS_AND_NEG -> If you want to use this, then you must read my last note.
+58 - SPELL_MOD_ATTACK_POWER_RANGED_POS_AND_NEG -> If you want to use this, then you must read my last note.
+
+Last Note:
+1) SPELL_MOD_HIT_RATING - It is a general rating so you must use SPELL_MOD_HIT_MELEE_RATING(16), SPELL_MOD_HIT_RANGED_RATING(17) and SPELL_MOD_HIT_SPELL_RATING(18). How?
+You can use the other stat types. For example: stattype1 can be 16, stattype2 can be 17 and stattype3 can be 18.
+Values of 16, 17 and 18 must be same.
+
+2) SPELL_MOD_CRIT_RATING - It is a general rating so you must use SPELL_MOD_CRIT_MELEE_RATING(19), SPELL_MOD_CRIT_RANGED_RATING(20) and SPELL_MOD_CRIT_SPELL_RATING(21). How?
+You can use the other stat types. For example: stattype1 can be 19, stattype2 can be 20 and stattype3 can be 21.
+Values of 19, 20 and 21 must be same.
+
+3) SPELL_MOD_HIT_TAKEN_RATING - It is a general rating so you must use SPELL_MOD_HIT_TAKEN_MELEE_RATING(22), SPELL_MOD_HIT_TAKEN_RANGED_RATING(23) and SPELL_MOD_HIT_TAKEN_SPELL_RATING(24). How?
+You can use the other stat types. For example: stattype1 can be 22, stattype2 can be 23 and stattype3 can be 24.
+Values of 22, 23 and 24 must be same.
+
+4) SPELL_MOD_CRIT_TAKEN_RATING - It is a general rating so you must use SPELL_MOD_CRIT_TAKEN_MELEE_RATING(25), SPELL_MOD_CRIT_TAKEN_RANGED_RATING(26) and SPELL_MOD_CRIT_TAKEN_SPELL_RATING(27). How?
+You can use the other stat types. For example: stattype1 can be 25, stattype2 can be 26 and stattype3 can be 27.
+Values of 25, 26 and 27 must be same.
+
+5) SPELL_MOD_HASTE_RATING - It is a general rating so you must use SPELL_MOD_HASTE_MELEE_RATING(28), SPELL_MOD_HASTE_RANGED_RATING(29) and SPELL_MOD_HASTE_SPELL_RATING(30). How?
+You can use the other stat types. For example: stattype1 can be 28, stattype2 can be 29 and stattype3 can be 30.
+Values of 28, 29 and 30 must be same.
+
+6) SPELL_MOD_ATTACK_POWER - It is a general rating so you must use SPELL_MOD_ATTACK_POWER_POS_AND_NEG(57) and SPELL_MOD_ATTACK_POWER_RANGED_POS_AND_NEG(58). How?
+You can use the other stat types. For example: stattype1 can be 57 and stattype2 can be 58.
+Values of 57 and 58 must be same.
